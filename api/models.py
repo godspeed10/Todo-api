@@ -16,10 +16,10 @@ class Task(models.Model):
         return self.id , self.title
 
 
-class CustomUser(AbstractUser):
-    email = models.EmailField(null=True, unique=True)
-    username = models.CharField(max_length=50, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+# class CustomUser(AbstractUser):
+#     email = models.EmailField(null=True, unique=True)
+#     username = models.CharField(max_length=50, null=True)
+#     created_at = models.DateTimeField(auto_now_add=True)
 
-    USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ['username']
+#     USERNAME_FIELD = "email"
+#     REQUIRED_FIELDS = ['username']
